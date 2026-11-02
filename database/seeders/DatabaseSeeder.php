@@ -23,7 +23,7 @@ class DatabaseSeeder extends Seeder
         ];
 
         foreach ($rows as [$roll, $name, $cgpa]) {
-            Student::create([
+             Student::create(['name' => 'Delfin Davis', 'roll_no' => '72']);
                 'roll_no'    => $roll,
                 'name'       => $name,
                 'email'      => strtolower(str_replace(' ', '.', $name)).'@example.com',
